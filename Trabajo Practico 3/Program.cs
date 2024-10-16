@@ -97,6 +97,10 @@ class Program
             if (c2 == 6) { Console.BackgroundColor = ConsoleColor.Black; Console.WriteLine("\n"); c2 = 0; }
         }
 
+        Console.WriteLine("Presione ENTER para continuar. . .");
+
+        Console.ReadLine();               
+
         Retorno(asientos);
     
     }
