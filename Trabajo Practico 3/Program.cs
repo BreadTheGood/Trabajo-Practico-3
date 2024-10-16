@@ -10,6 +10,7 @@ class Program
     //Menú inicial
     static int Menu(List<int> asientos)
     {
+        Console.Clear();
         int menu = 0;
 
         Console.WriteLine("=============================================");
@@ -53,7 +54,8 @@ class Program
 
     //Funcion para agregar o cancelar reservas
     static List<int> Reserva(List<int> asientos, int menu)
-    {   
+    {
+        Console.Clear();
         int seleccion = 0;
 
         if (menu == 1)
@@ -79,6 +81,7 @@ class Program
 
     //Funcion para mostrar todos los asientos disponibles y ocupados
     static void MostrarTodos(List<int> asientos) {
+        Console.Clear();
         int c = 0;
         int c2 = 0;
         foreach (int i in asientos)
@@ -101,6 +104,7 @@ class Program
     //Funcion de retorno al menu principal o salir del programa
     static void Retorno(List<int> asientos) {
 
+        Console.Clear();
         Console.WriteLine("=============================");
         Console.WriteLine("Operación Realizada con éxito");
         Console.WriteLine("=============================");
@@ -122,6 +126,7 @@ class Program
     //Funcion para mostrar la cantidad total de asientos disponibles y ocupados
     static void MostrarCantidades(List<int> asientos)
     {
+        Console.Clear();
         int c0 = 0;
         int c1 = 0;
 
@@ -138,6 +143,7 @@ class Program
 
     static void Buscar(List<int> asientos)
     {
+        Console.Clear();
         int a = 0;
 
         Console.WriteLine("Ingrese el numero del asiento que desea consultar\n");
@@ -159,6 +165,7 @@ class Program
 
     static void Salir() {
 
+        Console.Clear();
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("\r\n████████████████████████████████████████████████████████████\r\n█─▄▄▄▄█▄─▄▄▀██▀▄─██─▄▄▄─█▄─▄██▀▄─██─▄▄▄▄███▄─▄▄─█─▄▄─█▄─▄▄▀█\r\n█─██▄─██─▄─▄██─▀─██─███▀██─███─▀─██▄▄▄▄─████─▄▄▄█─██─██─▄─▄█\r\n▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▀▀▄▄▄▀▀▀▄▄▄▄▀▄▄▀▄▄▀\r\n████████████████████████████████████████████████████████████\r\n█▄─▄▄─█▄─▄███▄─▄▄─█─▄▄▄▄█▄─▄█▄─▄▄▀█▄─▀█▄─▄█─▄▄─█─▄▄▄▄█░█░█░█\r\n██─▄█▀██─██▀██─▄█▀█─██▄─██─███─▄─▄██─█▄▀─██─██─█▄▄▄▄─█▄█▄█▄█\r\n▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▀▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▀▄▄▄▄▄▀▄▀▄▀▄▀");
         Console.ForegroundColor= ConsoleColor.White;
